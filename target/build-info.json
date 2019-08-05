@@ -1,0 +1,51 @@
+{
+  "version" : "1.0.1",
+  "name" : "maven-tutorial",
+  "number" : "1565001262324",
+  "type" : "MAVEN",
+  "buildAgent" : {
+    "name" : "Maven",
+    "version" : "3.6.1"
+  },
+  "agent" : {
+    "name" : "Maven",
+    "version" : "3.6.1"
+  },
+  "started" : "2019-08-05T16:04:24.800+0530",
+  "durationMillis" : 3934,
+  "licenseControl" : {
+    "runChecks" : false,
+    "includePublishedArtifacts" : false,
+    "autoDiscover" : false,
+    "licenseViolationsRecipientsList" : "",
+    "scopesList" : ""
+  },
+  "buildRetention" : {
+    "count" : -1,
+    "deleteBuildArtifacts" : true,
+    "buildNumbersNotToBeDiscarded" : [ ]
+  },
+  "modules" : [ {
+    "properties" : { },
+    "id" : "com.mcnz.maven.example:maven-tutorial:1.0.2-SNAPSHOT",
+    "artifacts" : [ {
+      "type" : "jar",
+      "sha1" : "30b1d49c9c341b6080ad4d278cd6410a753b96d9",
+      "md5" : "0f910ddbb463d6ba91f672e811f920e3",
+      "name" : "maven-tutorial-1.0.2-SNAPSHOT.jar"
+    }, {
+      "type" : "pom",
+      "sha1" : "ca20eb5702d3fb56a7566c3b9138e048a956af6a",
+      "md5" : "92abab7bdefdc2096b5148308984fe89",
+      "name" : "maven-tutorial-1.0.2-SNAPSHOT.pom"
+    } ]
+  } ],
+  "governance" : {
+    "blackDuckProperties" : {
+      "runChecks" : false,
+      "includePublishedArtifacts" : false,
+      "autoCreateMissingComponentRequests" : false,
+      "autoDiscardStaleComponentRequests" : false
+    }
+  }
+}
