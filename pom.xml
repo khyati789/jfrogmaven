@@ -3,13 +3,7 @@
   <groupId>com.mcnz.maven.example</groupId>
   <artifactId>maven-tutorial</artifactId>
   <version>1.0.2-SNAPSHOT</version>
-   <packaging>war</packaging>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>Maven-Artifactory-Plugin</id>
-      <url>https://jcenter.bintray.com</url>
-    </pluginRepository>
-  </pluginRepositories> 
+   
   
     <distributionManagement>
     <snapshotRepository>
