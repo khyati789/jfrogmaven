@@ -3,7 +3,7 @@
   <groupId>com.mcnz.maven.example</groupId>
   <artifactId>maven-tutorial</artifactId>
   <version>1.0.2-SNAPSHOT</version>
-   
+   <packaging>war</packaging>
   
     <distributionManagement>
     <snapshotRepository>
@@ -14,14 +14,25 @@
 </distributionManagement>
   
   <build>
-    <plugins>
-      <plugin>            
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-war-plugin</artifactId>
-           <configuration>
-            <webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
-           </configuration>
-     </plugin>
+    <pluginManagement>
+     <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>2.1.2</version>
+                </plugin>
+            </plugins>
+      </pluginManagement>
         <plugin>
             <groupId>org.jfrog.buildinfo</groupId>
             <artifactId>artifactory-maven-plugin</artifactId>
@@ -45,6 +56,6 @@
                 </execution>
             </executions>
         </plugin>
-    </plugins>
+   
 </build>
 </project>
