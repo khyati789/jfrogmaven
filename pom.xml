@@ -19,6 +19,21 @@
     </snapshotRepository>
 </distributionManagement>
   
+  <project>
+  ...
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>3.0.6-SNAPSHOT</version>
+      </plugin>
+    </plugins>
+  </reporting>
+  ...
+</project>
+  
+  
   <build>
     <plugins>
         <plugin>
